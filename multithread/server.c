@@ -18,6 +18,7 @@ int socket_listen(char *host, int port)
 	int		sockfd;
 	int		ret;
 	struct sockaddr_in server;
+	
 
 	sockfd = socket(AF_INET, SOCK_STREAM, 0);
 	if(sockfd == -1)
@@ -50,6 +51,7 @@ int socket_listen(char *host, int port)
 	return sockfd;
 }
 
+/* 处理连接 */
 int handle_connect(int sockfd)
 {
 	int		clifd;
