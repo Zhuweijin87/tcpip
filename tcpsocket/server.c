@@ -127,7 +127,7 @@ int tcp_set_keep_alive(int sockfd, int idleVal, int interVal, int count)
 	}
 #endif
 
-#if 1
+#if 0
 	/* 首次探测的时间间隔 */
 	int keepIdle = idleVal;
 	ret = setsockopt(sockfd, SOL_TCP, TCP_KEEPIDLE, &keepIdle, sizeof(keepIdle));

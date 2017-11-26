@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <unistd.h>
-#include <sys/socket>
+#include <sys/socket.h>
 #include <sys/types.h>
 #include <arpa/inet.h>
 
@@ -13,7 +13,7 @@ int main(int args, char *argv[])
     char ch = '\0';
     struct hostent *ht = NULL;
 
-    while((ch=getopt(argc, argv, ":s:p")) != -1)
+    while((ch=getopt(args, argv, ":s:p")) != -1)
     {
         switch(ch)
 		{

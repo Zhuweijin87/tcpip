@@ -1,6 +1,6 @@
 CC=gcc
 
-EXEC: dns server client
+EXEC=server client dns arp
 
 all:$(EXEC)
 
@@ -13,5 +13,8 @@ client:client.o
 dns:dns.o
 	$(CC) -o $@ dns.c 
 
+arp:arp.o
+	$(CC) -o $@ arp.c 
+
 clean:
-	rm -f $(EXEC)
+	rm -f $(EXEC) *.o
