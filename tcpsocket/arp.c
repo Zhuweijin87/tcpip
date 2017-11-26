@@ -1,3 +1,5 @@
+// 获取电脑MAC地址信息
+
 #include <stdio.h>        
 #include <sys/types.h>  
 #include <ifaddrs.h>  
