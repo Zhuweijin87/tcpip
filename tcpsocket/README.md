@@ -21,3 +21,7 @@ int set_nonblocking(int sockfd)
 
 2. blocking的write只有在缓冲区足以放下整个buffer时才返回（与blocking read并不相同），nonblocking write则是返回能够放下字节数，之后调用则会返回-1（errno=EAGAIN或EWOULDBLOCK）
 
+
+### dns 域名解析 
+
+
