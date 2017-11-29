@@ -38,5 +38,4 @@ int set_nonblocking(int sockfd)
 
 
 ### dns 域名解析 
-
-
+域名解析所用到的函数：gethostbyname()
